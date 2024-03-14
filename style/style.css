@@ -4,73 +4,80 @@
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
 :root{
-    --font1:"Passion One";
-    --font2:"Sriracha";
+    --font0: Verdana, Geneva, Tahoma, sans-serif;
+    --font1:"Passion One", cursive;
+    --font2:"Sriracha", cursive;
 }
 *{
     margin: 0px;
+    padding: 0px;
+}
+html,body {
+    min-height: 100vh;
+    background-color: darkgrey;
+    font-family: var(--font0);
 }
 header{
     background-color: black;
+    color: white;
     text-align: center;
 }
-h1{
-    display: inline-block;
-    font: normal bold 7vw var(--font1),cursive;
-    color: white;
-    padding: 60px 10px 0px;
-    text-transform: uppercase;
-}
-span{
+header > h1{
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--font1);
     font-size: 10vw;
 }
-nav{
-    color: white;
-    padding-bottom: 40px;
-    font: normal 1em Verdana, sans-serif;
+header > p{
+    padding-bottom: 50px;
 }
-nav > a{
-    font: normal bold 1em Verdana, sans-serif;
-
-}
-a{
+header a, footer a{
     color: white;
     text-decoration: none;
+    font-weight: bolder;
 }
-a:hover{
+header a:hover, footer a:hover{
     text-decoration: underline;
 }
-p{
-    font: normal 3.5vw var(--font2), cursive;
-    text-align: justify;
-    padding-bottom: 71px;
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--font2);
+    font-size: 3.5vw;
 }
-article{
-    padding: 68.9px 30px;
+section > p{
+    padding-bottom: 2em;
 }
-.imagem{
+section.texto{
+    background-color: white;
+    color: black;
+
+}
+section.imagem{
+    background-color: rgb(39, 39, 39);
     color: white;
-    box-shadow: inset 2px 8px 5px rgba(0, 0, 0, 0.24);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.24);
+    background-size: cover;
+    background-attachment: fixed;
 }
-article.imagem > p{
+section.imagem > p{
+    display: inline-block;
+    padding: 5px;
     background-color: rgba(0, 0, 0, 0.363);
-    width: fit-content;
+    text-shadow: 1px 1px 0px black;
 }
-#flor{
-    background: white url("../image/background001.jpg") center center fixed;
-    background-size: cover;
+section#flor{
+    background-image:  url("../image/background001.jpg");
+    background-position: right center;
 }
-#folhas{
-    background: white url("../image/background002.jpg") center center fixed;
-    background-size: cover;
+section#folhas{
+    background-image:  url("../image/background002.jpg");
 }
 footer{
     background-color: black;
-    padding: 10px;
     color: white;
     text-align: center;
-    font: normal 1em Verdana,sans-serif;
-}
-footer > a#extra{
-    text-align: left;
+    padding: 10px;
 }
