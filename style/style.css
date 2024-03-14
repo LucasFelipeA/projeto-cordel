@@ -27,7 +27,11 @@ h1::first-letter{
 nav{
     color: white;
     padding-bottom: 40px;
+    font: normal 1em Verdana, sans-serif;
+}
+nav > a{
     font: normal bold 1em Verdana, sans-serif;
+
 }
 a{
     color: white;
@@ -37,7 +41,7 @@ a:hover{
     text-decoration: underline;
 }
 p{
-    font: normal 4vw var(--font2), cursive;
+    font: normal 3.6vw var(--font2), cursive;
     text-align: justify;
     padding-bottom: 71px;
 }
